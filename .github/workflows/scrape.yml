@@ -16,7 +16,7 @@ jobs:
           python-version: "3.10"
       - name: Install dependencies
         run: pip install snscrape pandas vaderSentiment
-      - name: Run scraper
+      - name: Run scraper & sentiment analysis
         run: python tweet_scraper_with_sentiment.py
       - name: Commit and push results
         run: |
